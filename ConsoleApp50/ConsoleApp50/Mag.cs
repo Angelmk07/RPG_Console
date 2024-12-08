@@ -7,11 +7,9 @@ namespace RPG
     {
         private int knowledge = 25;
         private int magicCost = 10;
-        private int currentHp;
         private int maxMana = 50;
         private int mana;
         private int potions = 5;
-        private int ragearmor;
         
         public Mag(string name) : base(name)
         {
@@ -85,15 +83,6 @@ namespace RPG
             }
         }
 
-        public override void riot()
-        {
-            Console.WriteLine("Буйство");
-            ragearmor = maxHp;
-            currentHp = Math.Min(maxHp, currentHp + 25);
-            Console.WriteLine($"Текущее HP: {currentHp}");
-            Console.WriteLine($"зашита : {ragearmor}");
-        }
-
         public override void reset()
         {
             blockDirection = 0;
@@ -113,6 +102,11 @@ namespace RPG
                 GetHit(damage);
                 Console.WriteLine($"{_name} получил урон {damage}");
             }
+        }
+        public override void Info()
+        {
+            base.Info();
+            Console.WriteLine($"значение маны {mana}");
         }
 
     }

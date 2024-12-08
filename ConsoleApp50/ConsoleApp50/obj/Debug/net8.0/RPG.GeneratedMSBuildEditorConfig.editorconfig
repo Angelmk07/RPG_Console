@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RPG
-build_property.ProjectDir = C:\Users\redmi\source\repos\ConsoleApp50\ConsoleApp50\
+build_property.ProjectDir = C:\Users\redmi\source\repos\RPG\RPG_Console\ConsoleApp50\ConsoleApp50\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

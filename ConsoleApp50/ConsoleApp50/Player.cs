@@ -23,6 +23,8 @@ namespace RPG
         protected int dexterity;
         protected int physicalPower;
         protected int maxHp;
+        protected int currentHp;
+        protected int ragearmor;
 
         protected Direction blockDirection;
         public abstract int Attack();
@@ -33,10 +35,21 @@ namespace RPG
             rage += 25;
         }
         public abstract void GetHit(int val);
-        public abstract void riot();
         public abstract void reset();
         public abstract void HandleAttack(Direction attackDirection, int damage);
- 
+        public virtual void Info()
+        {
+            Console.WriteLine($"Hp {currentHp}, защита {ragearmor}");
+        }
+        public virtual void riot()
+        {
+            Console.WriteLine("Буйство");
+            ragearmor = maxHp;
+            currentHp = Math.Min(maxHp, currentHp + 25);
+            rage = 0;
+            Console.WriteLine($"Текущее HP: {currentHp}");
+            Console.WriteLine($"зашита : {ragearmor}");
+        }
         public virtual void UpgradeStats()
         {
             Console.WriteLine("Доступные характеристики для прокачки:");

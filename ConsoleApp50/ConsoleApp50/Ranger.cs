@@ -5,9 +5,7 @@ namespace RPG
 {
     public class Ranger : Player
     {
-        private int currentHp;
         private int potions = 5;
-        private int ragearmor;
         private Direction dodgeDirection;
         public Ranger(string name) : base(name)
         {
@@ -79,15 +77,6 @@ namespace RPG
                 Console.WriteLine("Некорректный выбор направления.");
                 Block();
             }
-        }
-
-        public override void riot()
-        {
-            Console.WriteLine("Буйство");
-            ragearmor = maxHp;
-            currentHp = Math.Min(maxHp, currentHp + 25);
-            Console.WriteLine($"Текущее HP: {currentHp}");
-            Console.WriteLine($"зашита : {ragearmor}");
         }
 
         public override void reset()

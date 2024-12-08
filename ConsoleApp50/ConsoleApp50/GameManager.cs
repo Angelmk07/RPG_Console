@@ -45,6 +45,7 @@ namespace RPG
                 Console.WriteLine("8. Буйство");
                 Console.WriteLine("0. Выйти из игры");
                 Console.Write("\nВыберите действие: ");
+                _player.Info();
                 Console.WriteLine($"Hp врага {enemy.Hp}");
                 
                 Round();

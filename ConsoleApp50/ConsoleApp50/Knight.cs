@@ -6,9 +6,6 @@ namespace RPG
     public class Knight : Player
     {
         private bool upperBlock;
-
-        private int currentHp;
-        private int ragearmor;
         private int potions = 5;
 
         public Knight(string name) : base(name)
@@ -68,15 +65,6 @@ namespace RPG
                 Console.WriteLine("Зелий больше нет");
             }
 
-        }
-
-        public override void riot()
-        {
-            Console.WriteLine("Буйство");
-            ragearmor = maxHp;
-            currentHp = Math.Min(maxHp, currentHp + 25);
-            Console.WriteLine($"Текущее HP: {currentHp}");
-            Console.WriteLine($"зашита : {ragearmor}");
         }
 
         public override void reset()

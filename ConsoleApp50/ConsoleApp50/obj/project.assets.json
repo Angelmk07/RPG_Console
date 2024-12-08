@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\redmi\\source\\repos\\ConsoleApp50\\ConsoleApp50\\RPG.csproj",
+      "projectUniqueName": "C:\\Users\\redmi\\source\\repos\\RPG\\RPG_Console\\ConsoleApp50\\ConsoleApp50\\RPG.csproj",
       "projectName": "RPG",
-      "projectPath": "C:\\Users\\redmi\\source\\repos\\ConsoleApp50\\ConsoleApp50\\RPG.csproj",
+      "projectPath": "C:\\Users\\redmi\\source\\repos\\RPG\\RPG_Console\\ConsoleApp50\\ConsoleApp50\\RPG.csproj",
       "packagesPath": "C:\\Users\\redmi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\redmi\\source\\repos\\ConsoleApp50\\ConsoleApp50\\obj\\",
+      "outputPath": "C:\\Users\\redmi\\source\\repos\\RPG\\RPG_Console\\ConsoleApp50\\ConsoleApp50\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\redmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
